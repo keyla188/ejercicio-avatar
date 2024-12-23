@@ -54,13 +54,13 @@
   color: var(--black-color);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1020px) {
   .dots-container {
     display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1020px){
   .slider-dots .slide-item {
     display: none;
   }

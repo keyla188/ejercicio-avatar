@@ -106,7 +106,7 @@ form button:hover {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 1020px) {
   .newsletter-container {
     flex-direction: column;
   }

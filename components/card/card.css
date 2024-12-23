@@ -77,7 +77,7 @@ video {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1020px) {
   .cards-container {
     grid-template-columns: repeat(2, 1fr);
   }

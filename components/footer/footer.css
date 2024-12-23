@@ -62,7 +62,7 @@ footer button:hover {
   background-color: #555;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1020px){
   .footer-social-media,
   .footer-payments-rights {
     flex-direction: column;
