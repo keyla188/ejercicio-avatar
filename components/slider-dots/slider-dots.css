@@ -71,4 +71,14 @@
     display: block;
     gap: 0;
   }
+  .slider-dots p {
+    font-size: 45px;
+  }
+  .slider-dots span {
+    font-size: 25px;
+  }
+  .slider-dots img {
+    width: 60px;
+    height: 60px;
+  }
 }

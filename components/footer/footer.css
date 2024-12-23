@@ -47,7 +47,7 @@ footer {
 }
 
 footer button {
-  max-width: 100px;
+  max-width: 120px;
   font-size: 13px;
   padding: 10px;
   background-color: var(--black-color);
@@ -70,5 +70,26 @@ footer button:hover {
   }
   .footer-social-media .settings {
     justify-content: flex-start;
+  }
+
+  .footer-social-media svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .item h4 {
+    font-size: 22px;
+  }
+
+  .item p {
+    font-size: 20px;
+  }
+
+  footer button {
+    font-size: 20px;
+  }
+
+  .rights-reserved span{
+    font-size: 20px;
   }
 }

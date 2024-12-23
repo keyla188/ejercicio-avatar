@@ -126,15 +126,16 @@
 @media screen and (max-width: 1020px){
 
   h1 span{
-    font-size: 30px;
+    font-size: 50px;
   }
   a, li, p {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   span {
-    font-size: 18px;
+    font-size: 20px;
   }
+  
   .grid-container {
     grid-template-columns: repeat(2, 1fr); 
     grid-template-rows: repeat(4, 1fr); 

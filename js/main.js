@@ -8,6 +8,21 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((html) => {
       headerContainer.innerHTML = html;
 
+      const header = document.querySelector("header");
+      const changePoint = window.innerHeight / 2; 
+      
+      if (header) {
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > changePoint) {
+            header.classList.add("scrolled");
+          } else {
+            header.classList.remove("scrolled");
+          }
+        });
+      } else {
+        console.error("El elemento 'header' no fue encontrado.");
+      }
+
       const headerButton = document.getElementById("menu-icon");
       if (headerButton) {
         headerButton.addEventListener("click", () => {

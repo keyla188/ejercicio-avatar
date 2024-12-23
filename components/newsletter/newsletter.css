@@ -1,4 +1,3 @@
-/* General Modal Overlay */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -51,13 +50,13 @@
 }
 
 .content-container h2 {
-  font-size: 1.8rem;
+  font-size: 25px;
   margin-bottom: 10px;
   color: #333;
 }
 
 .content-container p {
-  font-size: 1rem;
+  font-size: 18px;
   margin-bottom: 20px;
   color: #555;
   line-height: 1.5;
@@ -71,7 +70,7 @@
 }
 
 form label {
-  font-size: 0.9rem;
+  font-size: 16px;
   color: #333;
   margin-bottom: 5px;
   display: block;
@@ -93,7 +92,7 @@ form button {
   color: var(--white-color);
   border: none;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -120,4 +119,22 @@ form button:hover {
   .content-container {
     width: 100%;
   }
+  form button {
+    font-size: 30px;
+  }
+  form label {
+    font-size: 28px;
+  }
+  .content-container h2{
+    font-size: 40px;
+  }
+  .content-container p{
+    font-size: 32px;
+  }
+
+  form input {
+    font-size: 26px;
+    padding: 20px;
+  }
+
 }
