@@ -1,0 +1,106 @@
+.clothing-dots-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  gap: 15vw;
+}
+.image-section {
+  position: relative;
+  width: 45%;
+}
+
+.image-section img {
+  width: -webkit-fill-available;
+  height: auto;
+  border-radius: 8px;
+}
+
+.hotspot {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3vw;
+  height: 3vw;
+  background-color: rgba(255, 255, 255, 0.282);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.hotspot .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--white-color);
+}
+
+.hotspot:hover {
+  transform: scale(1.5);
+}
+
+.details-section img {
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+.details-section h2 {
+  margin: 10px 0;
+}
+
+.clothing-dots-container .card-section {
+  max-width: 28%;
+}
+
+.clothing-dots-container .card {
+  display: none;
+}
+
+.clothing-dots-container .card.active {
+  display: block;
+}
+
+.clothing-dots-container .slider-buttons button {
+  background-color: transparent;
+  border: 1px solid var(--white-hover);
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 15px 16px;
+}
+.clothing-dots-container .slider-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .clothing-dots-container {
+    gap: 0;
+    flex-direction: column;
+  }
+  .clothing-dots-container .slider-buttons {
+    display: none;
+  }
+  .image-section {
+    width: 100%;
+  }
+  .image-section {
+    width: 100%;
+  }
+  .clothing-dots-container .card-section {
+    max-width: 100%;
+  }
+
+  .clothing-dots-container .slider {
+    display: none;
+  }
+  .clothing-dots-container .card {
+    display: block;
+    border: 1px solid var(--white-hover);
+    padding: 12px;
+  }
+}

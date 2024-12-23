@@ -1,0 +1,40 @@
+.carousel {
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.carousel-slide {
+  width: 215px;
+  padding: 15px;
+  flex-shrink: 0;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-button {
+  background-color: var(--white-color);
+  border-radius: 50px;
+  color: var(--black-color);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}

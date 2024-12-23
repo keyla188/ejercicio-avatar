@@ -1,0 +1,149 @@
+:root {
+    --white-color: #FFFF;
+    --white-hover: #e0e0e0;
+    --black-color: #000000;
+  
+    --gray-color: #B5B5B5;
+    --gray-color-dark: #626262;
+  
+    --primary-font: "Indie Flower", serif;
+    --text-font: "Georama", serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: var(--text-font);
+  }
+  
+
+  a{
+    color: var(--black-color);
+    text-decoration: none ;
+  }
+
+
+  .container {
+    margin-bottom: 80px;
+  }
+
+  .primary-font {
+    font-family: var(--primary-font);
+  }
+
+  .cards-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: 1fr 1fr; 
+    height: 100vh;
+  }
+
+  .grid-item {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .grid-item span {
+    position: relative;
+    z-index: 2;
+    color: var(--white-color);
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 26px;
+  }
+  
+  .grid-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+  
+  .vestidos {
+    grid-column: 1 / 2; 
+    grid-row: 1 / 2; 
+  }
+  
+  .sets {
+    grid-column: 2 / 3; 
+    grid-row: 1 / 2;    
+  }
+  
+  .novia {
+    grid-column: 1 / 3; 
+    grid-row: 2 / 3; 
+  }
+  
+  .abrigos {
+    grid-column: 3 / 5; 
+    grid-row: 1 / 3;   
+  }
+.vestidos::before {
+  background-image: url('https://ladypipa.com/cdn/shop/files/LADYPIPARUNWAY8045.jpg?v=1728638246&width=800');
+}
+
+.sets::before {
+  background-image: url('https://ladypipa.com/cdn/shop/files/LADYPIPA_RUNWAY9183.jpg?v=1729066637&width=300');
+}
+
+.novia::before {
+  background-image: url('https://ladypipa.com/cdn/shop/files/WEB_-_LOOK_6_-_1819.jpg?v=1723526287&width=800');
+}
+
+.abrigos::before {
+  background-image: url('https://ladypipa.com/cdn/shop/files/LADYPIPARUNWAY7967.jpg?v=1728640188&width=400');
+}
+
+
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
+  }
+
+  .vestidos {
+    grid-column: 1 / 2; 
+    grid-row: 1 / 2; 
+  }
+
+  .sets {
+    grid-column: 2 / 3; 
+    grid-row: 1 / 2; 
+  }
+
+  .abrigos {
+    grid-column: 1 / 3; 
+    grid-row: 2 / 4;
+  }
+
+  .novia {
+    grid-column: 1 / 3; 
+    grid-row: 4 / 5; 
+  }
+}

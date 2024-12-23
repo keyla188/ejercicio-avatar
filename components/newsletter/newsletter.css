@@ -1,0 +1,123 @@
+/* General Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.newsletter-container {
+  background: var(--white-color);
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  width: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.content-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.close {
+  align-self: flex-end;
+  cursor: pointer;
+  margin-bottom: 10px;
+  color: var(--black-color);
+  transition: transform 0.2s;
+}
+
+.close:hover {
+  transform: scale(1.2);
+}
+
+.content-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.content-container p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 20px;
+}
+
+form label {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+.modal-overlay {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .newsletter-container {
+    flex-direction: column;
+  }
+
+  .image-container img {
+    height: 280px;
+    width: -webkit-fill-available;
+    object-fit: cover;
+  }
+
+  .content-container {
+    width: 100%;
+  }
+}
